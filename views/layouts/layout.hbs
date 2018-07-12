@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"> </script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"> </script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAAGmEC4ML0_WdTuPnNV22AOvYF15bf8Yc",
+    authDomain: "e-commerce-3a3b1.firebaseapp.com",
+    databaseURL: "https://e-commerce-3a3b1.firebaseio.com",
+    projectId: "e-commerce-3a3b1",
+    storageBucket: "e-commerce-3a3b1.appspot.com",
+    messagingSenderId: "803901122772"
+  };
+  firebase.initializeApp(config);
+ </script>
+
+  </head>
+  <body>
+    {{> header}}
+    <div class="container">
+    {{{body}}}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='/javascripts/productadmin.js'></script>
+    <script src='/javascripts/Auth.js'></script>
+    <script src='/javascripts/GoogleAuth.js'></script>
+    
+  </body>
+</html>
